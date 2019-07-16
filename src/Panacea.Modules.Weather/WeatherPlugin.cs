@@ -120,7 +120,7 @@ namespace Panacea.Modules.Weather
         {
             _main.WeatherResponse = _weatherResponse;
             _main.ForecastResponse = _forecastResponse;
-            _main.Response = _settingsResponse;
+            _main.SettingsResponse = _settingsResponse;
             _main.Done();
         }
     }

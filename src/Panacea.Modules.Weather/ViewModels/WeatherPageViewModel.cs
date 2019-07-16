@@ -35,18 +35,23 @@ namespace Panacea.Modules.Weather.ViewModels
             }
         }
 
-        private GetSettingsResponse _response;
-        public GetSettingsResponse Response
+        private GetSettingsResponse _settingsResponse;
+        public GetSettingsResponse SettingsResponse
         {
-            get => _response;
+            get => _settingsResponse;
             set
             {
-                _response = value;
+                _settingsResponse = value;
                 OnPropertyChanged();
             }
         }
 
         Visibility _layoutRootVisibility = Visibility.Collapsed;
+
+        public WeatherPageViewModel()
+        {
+        }
+
         public Visibility LayoutRootVisibility {
             get => _layoutRootVisibility;
             private set
